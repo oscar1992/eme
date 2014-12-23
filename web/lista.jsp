@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : 23/12/2014, 01:58:28 PM
+    Document   : lista
+    Created on : 23/12/2014, 02:25:40 PM
     Author     : (°_°)
 --%>
 
@@ -12,7 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Prueba 1</h1>
-        <a href="lista.jsp">Inscribir</a>
+        <h1>Hello World!</h1>
     </body>
 </html>
