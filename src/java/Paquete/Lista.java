@@ -17,6 +17,20 @@ public class Lista {
     private String hora;
     private String etiqueta;
 
+    public Lista(String paciente, String RA, String Procedimiento, String peso, String hora, String etiqueta) {
+        this.paciente = paciente;
+        this.RA = RA;
+        this.Procedimiento = Procedimiento;
+        this.peso = peso;
+        this.hora = hora;
+        this.etiqueta = etiqueta;
+    }
+
+    public Lista() {
+    }
+    
+    
+    
     public String getPaciente() {
         return paciente;
     }
