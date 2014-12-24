@@ -41,7 +41,13 @@
     <body>
         <h1>Hello World!</h1>
         <form action="s1">
-            <input type="submit" name="sub" value="ENNN"/>
+            <input type="text" name="nom" value="Paciente"/><br>
+            <input type="text" name="RA" value="RA"/><br>
+            <input type="text" name="procedi" value="Procedimiento"/><br>
+            <input type="text" name="peso" value="Peso"/><br>
+            <input type="text" name="hora" value="Hora"/><br>
+            <input type="text" name="etiqueta" value="Etiqueta"/><br>
+            <input type="submit" name="sub" value="ENNN"/><br>
         </form>
     </body>
 </html>

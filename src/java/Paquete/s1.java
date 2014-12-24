@@ -29,11 +29,11 @@ public class s1 extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    /*protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.sendRedirect("index.jsp");
+        
     }
-
+*/
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -46,7 +46,7 @@ public class s1 extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        
     }
 
     /**
@@ -60,7 +60,16 @@ public class s1 extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        System.out.println("sfawefef");
+        response.setContentType("text/html; charset=iso-8859-1");
+        PrintWriter out = response.getWriter();
+        
+        String paciente=request.getParameter("nom");
+        String RA=request.getParameter("RA");
+        String Procedimietno=request.getParameter("procedi");
+        String Peso=request.getParameter("peso");
+        String Hora=request.getParameter("hora");
+        String Etiqueta=request.getParameter("etiqueta");
         
         
     }

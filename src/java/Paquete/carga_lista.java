@@ -29,11 +29,33 @@ public class carga_lista {
         }catch(Exception e){
             System.out.println("ERROR: "+e);
         }
+        con.cerrar();
         return lista;
         
     }
     
-    
-    
-    
+
+
+    public boolean ingresa(String paci, String RA, String proc, String peso, String hora, String eti) throws SQLException{
+        boolean resp=false;
+        COnexion con = new COnexion();
+        String sql="";
+        try{
+            con.cone();
+            PreparedStatement ps=(PreparedStatement)con.cone().prepareStatement(sql);
+            ps.setString(1, paci);
+            ps.setString(2, RA);
+            ps.setString(3, proc);
+            ps.setString(4, peso);
+            ps.setString(5, hora);
+            ps.setString(6, eti);
+            ps.executeUpdate();
+            con.cerrar();
+            resp=true;
+        }catch(Exception e){
+            
+        }
+        return resp;
+    }
+
 }
